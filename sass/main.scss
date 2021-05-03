@@ -1,11 +1,28 @@
+
+$rouge: rgb(209, 49, 40);
+$vert: rgb(82, 164, 72);
+$jaune: rgb(244,233,87);
+$bleu: rgb(63,77,152);
+$gris: rgb(100,100,100);
+
+// Variables
+
 html, body{
+    height: 100%;
     margin: 0;
     padding: 0;
+
     border: none;
+
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 ol, ul {
 	list-style: none;
+}
+ul, p, h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    padding: 0;
 }
 blockquote, q {
 	quotes: none;
@@ -20,3 +37,64 @@ table {
 	border-spacing: 0;
 }
 // CSS reset
+
+body{
+    display: flex;
+}
+
+nav{
+    width: 20%;
+    height: 100%;
+    
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: space-between;
+
+    img{
+        width: 80%;
+        margin-top: 10%;
+        
+        border: 1px black solid;
+    }
+
+    .menu{
+        width: 100%;
+        .menu__selection{
+            margin: 30px 0;
+            padding: 10px;
+
+            font-weight: bold;
+            font-size: 24px;
+            text-align: center;
+            text-shadow: 1px 2px 3px black;
+            color: white;
+
+            &--1{
+                background-color: $rouge;
+            }
+            &--2{
+                background-color: $vert;
+            }
+            &--3{
+                background-color: $jaune;
+            }
+            &--4{
+                background-color: $bleu;
+            }
+            &--5{
+                background-color: $gris;
+            }
+        }
+    }
+
+    p{
+        text-align: center;
+    }
+}
+
+section{
+    width: 80%;
+    height: 100%;
+    background-color: lightgray;
+}

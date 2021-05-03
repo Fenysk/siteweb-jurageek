@@ -1,11 +1,18 @@
 html, body {
+  height: 100%;
   margin: 0;
   padding: 0;
   border: none;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 ol, ul {
   list-style: none;
+}
+
+ul, p, h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  padding: 0;
 }
 
 blockquote, q {
@@ -21,6 +28,60 @@ q:before, q:after {
 table {
   border-collapse: collapse;
   border-spacing: 0;
+}
+
+body {
+  display: flex;
+}
+
+nav {
+  width: 20%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: space-between;
+}
+nav img {
+  width: 80%;
+  margin-top: 10%;
+  border: 1px black solid;
+}
+nav .menu {
+  width: 100%;
+}
+nav .menu .menu__selection {
+  margin: 30px 0;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 24px;
+  text-align: center;
+  text-shadow: 1px 2px 3px black;
+  color: white;
+}
+nav .menu .menu__selection--1 {
+  background-color: #d13128;
+}
+nav .menu .menu__selection--2 {
+  background-color: #52a448;
+}
+nav .menu .menu__selection--3 {
+  background-color: #f4e957;
+}
+nav .menu .menu__selection--4 {
+  background-color: #3f4d98;
+}
+nav .menu .menu__selection--5 {
+  background-color: #646464;
+}
+nav p {
+  text-align: center;
+}
+
+section {
+  width: 80%;
+  height: 100%;
+  background-color: lightgray;
 }
 
 /*# sourceMappingURL=style.css.map */
