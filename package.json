@@ -2,7 +2,7 @@
   "name": "package.json",
   "version": "1.0.0",
   "description": "Site web de JuraGeek",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
     "sass" : "sass --watch ./sass/main.scss:./public/css/style.css"
   },
